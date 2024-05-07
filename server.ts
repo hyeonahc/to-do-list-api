@@ -8,7 +8,10 @@ import cors from 'cors'
 // : CORS is a security feature that regulates different domain requests in web browsers, ensuring that only trusted websites can access resources on a server
 import express from 'express'
 // express is Node.js framework for building web APIs
+import dotenv from 'dotenv'
 import todoRoutes from './router/todo'
+
+dotenv.config()
 
 const app = express()
 // sets up the foundation for your web server using Express, allowing you to define routes, add middleware, and handle HTTP requests and responses in your Node.js application.
